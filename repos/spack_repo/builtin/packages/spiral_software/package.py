@@ -4,7 +4,6 @@
 
 from spack_repo.builtin.build_systems.cmake import CMakePackage
 from spack_repo.builtin.build_systems.cuda import CudaPackage
-import llnl.util.tty as tty
 
 from spack.package import *
 
@@ -18,7 +17,7 @@ class SpiralSoftware(CMakePackage, CudaPackage):
     url = "https://github.com/spiral-software/spiral-software/archive/refs/tags/8.6.0.tar.gz"
     git = "https://github.com/spiral-software/spiral-software.git"
 
-    maintainers("spiralgen")
+    maintainers("spiralgen", "spiral-maintainers")
 
     license("BSD-2-Clause-FreeBSD")
 
